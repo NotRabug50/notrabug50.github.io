@@ -1,0 +1,253 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  font-family: 'Consolas', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #444444;
+  color: #333;
+  user-select: none;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  padding: 20px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 36px;
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Hero Styles */
+.hero {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+/* Projects Styles */
+.projects {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.project {
+  display: inline-block;
+  margin: 20px;
+  color: #15ff00;
+}
+
+.project img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ff00;
+}
+
+.project p {
+  font-size: 14px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+.animated-title {
+  animation: rainbow 4s infinite;
+}
+
+.rainbow {
+  animation: rainbow 4s infinite;
+  display: inline-block;
+}
+/* styles.css */
+.pp {
+  width: 150px;
+  position: sticky;
+  left: 40%;
+  border-radius: 50%;
+}
+.aboutdesc{
+  position: relative;
+  text-align: center;
+}
+.retro-button {
+  display: inline-block;
+  background-color: #c0c0c0;
+  border: none;
+  color: #333;
+  padding: 10px 20px;
+  font-family: 'Courier', monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.retro-button:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-color: #fff;
+  opacity: 0.05;
+  transform: rotate(45deg);
+  transition: opacity 0.3s;
+}
+
+.retro-button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.retro-button:hover:before {
+  opacity: 0.1;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+  }
+  14% {
+    color: #ff7f00;
+    text-shadow: 0 0 10px #ff7f00;
+  }
+  28% {
+    color: #ffff00;
+    text-shadow: 0 0 10px #ffff00;
+  }
+  42% {
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00;
+  }
+  57% {
+    color: #0000ff;
+    text-shadow: 0 0 10px #0000ff;
+  }
+  71% {
+    color: #4b0082;
+    text-shadow: 0 0 10px #4b0082;
+  }
+  85% {
+    color: #8f00ff;
+    text-shadow: 0 0 10px #8f00ff;
+  }
+  100% {
+    color: #ff0000;
+    text-shadow: 0 0 10px #ff0000;
+  }
+}
+
+
+select {
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 30; /* Set a minimum width to accommodate the content */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position:sticky;
+  left: 100%;
+  outline: none;
+}
+
+
+
+select option {
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+}
+
+/* Custom retro-themed styles */
+select {
+  font-family: 'Consolas', monospace;
+  letter-spacing: 1px;
+}
