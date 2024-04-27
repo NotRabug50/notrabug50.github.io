@@ -3,7 +3,8 @@
     "firebase": "^10.11.1"
   },
   "scripts": {
-    "build": "npm ci && firebase deploy --only hosting"
+    "build": "npm ci && npm run build:gh-pages",
+    "build:gh-pages": "webpack --mode production",
+    "deploy": "gh-pages -d build"
   }
-  
 }
